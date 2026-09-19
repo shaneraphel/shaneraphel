@@ -24,3 +24,5 @@ Each kernel imports the package, records their empty case, then runs the same sq
 | [hulllock](https://github.com/shaneraphel/aletheia-hulllock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `ConvexHull` | no points raises | hull 4 |
 | [meshlock](https://github.com/shaneraphel/aletheia-meshlock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `Delaunay` | no points raises | 4 triangles |
 | [celllock](https://github.com/shaneraphel/aletheia-celllock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `Voronoi` | no points raises | unbounded cells 4 |
+| [bloomlock](https://github.com/shaneraphel/aletheia-bloomlock/blob/main/SHOW.md) | [joseph-fox/python-bloomfilter](https://github.com/joseph-fox/python-bloomfilter) | empty membership is `False` | maybe-membership 1 |
+| [layerlock](https://github.com/shaneraphel/aletheia-layerlock/blob/main/SHOW.md) | [networkx/networkx](https://github.com/networkx/networkx) | empty longest path is 0 | 3-layer task chain |
