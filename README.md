@@ -26,3 +26,7 @@ Each kernel imports the package, records their empty case, then runs the same sq
 | [celllock](https://github.com/shaneraphel/aletheia-celllock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `Voronoi` | no points raises | unbounded cells 4 |
 | [bloomlock](https://github.com/shaneraphel/aletheia-bloomlock/blob/main/SHOW.md) | [joseph-fox/python-bloomfilter](https://github.com/joseph-fox/python-bloomfilter) | empty membership is `False` | maybe-membership 1 |
 | [layerlock](https://github.com/shaneraphel/aletheia-layerlock/blob/main/SHOW.md) | [networkx/networkx](https://github.com/networkx/networkx) | empty longest path is 0 | 3-layer task chain |
+| [ranklock](https://github.com/shaneraphel/aletheia-ranklock/blob/main/SHOW.md) | [ilanschnell/bitarray](https://github.com/ilanschnell/bitarray) | empty `count(1)` is 0 | rank 3 |
+| [rangelock](https://github.com/shaneraphel/aletheia-rangelock/blob/main/SHOW.md) | [grantjenks/python-sortedcontainers](https://github.com/grantjenks/python-sortedcontainers) | empty `irange` is `[]` | box count 2 |
+| [sitelock](https://github.com/shaneraphel/aletheia-sitelock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `Voronoi` | no points raises | Fortune vertex 1 |
+| [marchlock](https://github.com/shaneraphel/aletheia-marchlock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `ConvexHull` | no points raises | Jarvis hull 4 |
