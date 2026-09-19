@@ -30,3 +30,11 @@ Each kernel imports the package, records their empty case, then runs the same sq
 | [rangelock](https://github.com/shaneraphel/aletheia-rangelock/blob/main/SHOW.md) | [grantjenks/python-sortedcontainers](https://github.com/grantjenks/python-sortedcontainers) | empty `irange` is `[]` | box count 2 |
 | [sitelock](https://github.com/shaneraphel/aletheia-sitelock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `Voronoi` | no points raises | Fortune vertex 1 |
 | [marchlock](https://github.com/shaneraphel/aletheia-marchlock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `ConvexHull` | no points raises | Jarvis hull 4 |
+| [pairlock](https://github.com/shaneraphel/aletheia-pairlock/blob/main/SHOW.md) | [networkx/networkx](https://github.com/networkx/networkx) | empty matching is `set()` | pairing 2 |
+| [routelock](https://github.com/shaneraphel/aletheia-routelock/blob/main/SHOW.md) | [networkx/networkx](https://github.com/networkx/networkx) | empty `johnson` is `{}` | lane distance 2 |
+| [voxelock](https://github.com/shaneraphel/aletheia-voxelock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `norm` is 0.0 | lidar NE 1 |
+| [gridlock](https://github.com/shaneraphel/aletheia-gridlock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `norm` is 0.0 | BEV NE 1 |
+| [remainlock](https://github.com/shaneraphel/aletheia-remainlock/blob/main/SHOW.md) | stdlib `math.gcd` | `gcd(0,0)` is 0 | CRT 8 |
+| [twistlock](https://github.com/shaneraphel/aletheia-twistlock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `norm` is 0.0 | wrist hypot 5 |
+| [spikelock](https://github.com/shaneraphel/aletheia-spikelock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `mean` is `nan` | occupancy 3 |
+| [cliplock](https://github.com/shaneraphel/aletheia-cliplock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `ConvexHull` | no points raises | interior discard 1 |
