@@ -2,9 +2,9 @@ Aletheia is a compiled language model (`n_parameters=0`) that writes occupancy k
 
 [Show and tell](https://github.com/shaneraphel/aletheia-stemlock/discussions/3) · [compiled-llm topic](https://github.com/topics/compiled-llm)
 
-**World model / autonomous driving** — empty next, sites, or voxels are absence: [cyclelock](https://github.com/shaneraphel/aletheia-cyclelock) · [celllock](https://github.com/shaneraphel/aletheia-celllock) · [lanelock](https://github.com/shaneraphel/aletheia-lanelock) · [voxelock](https://github.com/shaneraphel/aletheia-voxelock)
+**World model / autonomous driving** — empty next, sites, or voxels are absence: [cyclelock](https://github.com/shaneraphel/aletheia-cyclelock) · [celllock](https://github.com/shaneraphel/aletheia-celllock) · [lanelock](https://github.com/shaneraphel/aletheia-lanelock) · [voxelock](https://github.com/shaneraphel/aletheia-voxelock) · [kalmanlock](https://github.com/shaneraphel/aletheia-kalmanlock) · [slotlock](https://github.com/shaneraphel/aletheia-slotlock)
 
-**Dexterous hand** — empty contacts are absence: [handlock](https://github.com/shaneraphel/aletheia-handlock) · [hulllock](https://github.com/shaneraphel/aletheia-hulllock) · [jointlock](https://github.com/shaneraphel/aletheia-jointlock)
+**Dexterous hand** — empty contacts are absence: [handlock](https://github.com/shaneraphel/aletheia-handlock) · [hulllock](https://github.com/shaneraphel/aletheia-hulllock) · [jointlock](https://github.com/shaneraphel/aletheia-jointlock) · [hookelock](https://github.com/shaneraphel/aletheia-hookelock)
 
 **BCI / spike tapes** — empty samples are absence: [spikelock](https://github.com/shaneraphel/aletheia-spikelock) · [stemlock](https://github.com/shaneraphel/aletheia-stemlock) · [bloomlock](https://github.com/shaneraphel/aletheia-bloomlock)
 
@@ -38,3 +38,6 @@ Each kernel imports the package, records their empty case, then runs the same sq
 | [twistlock](https://github.com/shaneraphel/aletheia-twistlock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `norm` is 0.0 | wrist hypot 5 |
 | [spikelock](https://github.com/shaneraphel/aletheia-spikelock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `mean` is `nan` | occupancy 3 |
 | [cliplock](https://github.com/shaneraphel/aletheia-cliplock/blob/main/SHOW.md) | [scipy/scipy](https://github.com/scipy/scipy) `ConvexHull` | no points raises | interior discard 1 |
+| [kalmanlock](https://github.com/shaneraphel/aletheia-kalmanlock/blob/main/SHOW.md) | [rlabbe/filterpy](https://github.com/rlabbe/filterpy) | `update(None)` accepted ([#333](https://github.com/rlabbe/filterpy/issues/333)) | occupancy 3 |
+| [hookelock](https://github.com/shaneraphel/aletheia-hookelock/blob/main/SHOW.md) | [numpy/numpy](https://github.com/numpy/numpy) | empty `norm` is 0.0 | spring occupancy 3 |
+| [slotlock](https://github.com/shaneraphel/aletheia-slotlock/blob/main/SHOW.md) | [chaimleib/intervaltree](https://github.com/chaimleib/intervaltree) | empty `at` is `[]` ([#159](https://github.com/chaimleib/intervaltree/issues/159)) | overlap 2 |
