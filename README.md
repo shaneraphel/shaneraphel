@@ -8,7 +8,7 @@ Aletheia is a compiled language model (`n_parameters=0`) that writes occupancy k
 
 **BCI / spike tapes** — empty samples are absence; [spikelock](https://github.com/shaneraphel/aletheia-spikelock) ships EDF / BIDS-EEG / XDF StreamHeader+Samples / BrainVision / WFDB / EEGLAB `.set` / GDF 1.25, official MNE reads the EDF, GDF, and BrainVision tapes, official wfdb reads the format-16 tapes, official pyxdf reports `n_streams` 3 (EEG, string markers, float32 Accel) on the sibling BCI kernels too: [spikelock](https://github.com/shaneraphel/aletheia-spikelock) · [stemlock](https://github.com/shaneraphel/aletheia-stemlock) · [bloomlock](https://github.com/shaneraphel/aletheia-bloomlock) · [gaplock](https://github.com/shaneraphel/aletheia-gaplock) · [sicklock](https://github.com/shaneraphel/aletheia-sicklock) · [pulselock](https://github.com/shaneraphel/aletheia-pulselock)
 
-**Fixed and used** — MNE 1.9.0 import raises on SciPy 1.17.1, a 6-line `sph_harm_y` shim (microseconds, numerics match) restores it, then official MNE reads the CNT / BDF / Persyst / NSX / Nicolet / Nihon / EyeLink / Eximia / NIRx / Hitachi / SNIRF tapes ([spikelock](https://github.com/shaneraphel/aletheia-spikelock/blob/main/SHOW.md)).
+**Fixed and used** — MNE 1.9.0 import raises on SciPy 1.17.1, a 6-line `sph_harm_y` shim (microseconds, numerics match) restores it, then official MNE reads the CNT / BDF / Persyst / NSX / Nicolet / Nihon / EyeLink / Eximia / NIRx / Hitachi / SNIRF / Curry / EGI tapes ([spikelock](https://github.com/shaneraphel/aletheia-spikelock/blob/main/SHOW.md)).
 
 ## Show: I used their tool, and I refused empty occupancy
 
